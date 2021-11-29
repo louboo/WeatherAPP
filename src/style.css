@@ -1,0 +1,191 @@
+.container-fluid {
+  border: 1px solid black;
+  height: 475px;
+  width: 850px;
+  box-shadow: 5px 10px black;
+  margin-top: 8%;
+  margin-bottom: 3%;
+}
+
+h1 {
+  font-family: "Staatliches";
+  font-size: 80px;
+  margin-top: 8%;
+  text-align: center;
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+h2 {
+  font-family: "Staatliches";
+  text-align: center;
+  font-size: 150px;
+  line-height: 0.95;
+}
+
+h3 {
+  font-family: "Staatliches";
+  text-align: center;
+}
+
+h4 {
+  font-family: "Staatliches";
+  text-align: center;
+}
+
+footer {
+  border: 1px solid black;
+  color: black;
+  font-family: "Staatliches";
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  opacity: 50%;
+}
+
+a {
+  color: hotpink;
+  font-family: "Staatliches";
+}
+
+#upcoming {
+  font-family: "PT Sans";
+  text-align: center;
+}
+.material-icons {
+  padding-top: 13px;
+  text-align: center;
+  padding-left: 30%;
+}
+
+.citySearch {
+  text-align: center;
+  font-family: "PT Sans";
+  border-radius: 45px;
+}
+
+#search-input {
+  width: 70px;
+  background-color: #118a7e;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-family: "PT Sans";
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#search-input:hover {
+  background-color: #93e4c1;
+  box-shadow: 0px 5px 10px #1f6f78;
+  color: #fff;
+}
+
+.search {
+  border: 0;
+  border-radius: 45px;
+  text-align: center;
+  margin: 15px;
+}
+
+#cel {
+  font-family: "Staatliches";
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  outline: none;
+  font-size: 30px;
+}
+
+#far {
+  font-family: "Staatliches";
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-size: 30px;
+}
+
+#buttonClick {
+  width: 350px;
+}
+
+@keyframes fade {
+  0% {
+    color: #94f2d7;
+  }
+  25% {
+    color: #63d8f2;
+  }
+  50% {
+    color: #7672f2;
+  }
+  75% {
+    color: #85b4f2;
+  }
+  100% {
+    color: #ad8df2;
+  }
+}
+
+.hotChoc {
+  height: 210px;
+  width: 230px;
+  text-align: center;
+  margin-left: 25%;
+}
+
+#celButton {
+  padding-left: 25%;
+  padding-bottom: 5%;
+  padding-top: 0;
+}
+#celButton:hover {
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+#farButton {
+  width: 70px;
+  padding-left: 35%;
+}
+
+#farButton:hover {
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.icon {
+  font-size: 12px;
+}
