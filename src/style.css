@@ -3,12 +3,12 @@
   height: 475px;
   width: 850px;
   box-shadow: 5px 10px black;
-  margin-top: 8%;
+  margin-top: 4%;
   margin-bottom: 3%;
 }
 
 h1 {
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   font-size: 80px;
   margin-top: 8%;
   text-align: center;
@@ -17,26 +17,32 @@ h1 {
   animation-iteration-count: infinite;
 }
 h2 {
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   text-align: center;
   font-size: 150px;
   line-height: 0.95;
 }
 
 h3 {
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   text-align: center;
 }
 
 h4 {
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   text-align: center;
+}
+
+h6 {
+  font-family: 'Staatliches';
+  display: block;
+  margin-left: 20%;
 }
 
 footer {
   border: 1px solid black;
   color: black;
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   text-align: center;
   width: 300px;
   margin: 0 auto;
@@ -45,11 +51,27 @@ footer {
 
 a {
   color: hotpink;
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
+}
+
+#currentLoc {
+  width: 150 px;
+  background-color: #118a7e;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'PT Sans';
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
 }
 
 #upcoming {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   text-align: center;
 }
 .material-icons {
@@ -60,7 +82,7 @@ a {
 
 .citySearch {
   text-align: center;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   border-radius: 45px;
 }
 
@@ -69,7 +91,7 @@ a {
   background-color: #118a7e;
   color: white;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   border: none;
   border-radius: 45px;
   transition: all 0.3s ease 0s;
@@ -91,7 +113,7 @@ a {
 }
 
 #cel {
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   width: 50px;
   height: 50px;
   border: none;
@@ -102,7 +124,7 @@ a {
 }
 
 #far {
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   text-align: center;
   width: 50px;
   height: 50px;
