@@ -60,11 +60,12 @@ h4.innerHTML = `${hours}:${minutes}`
 // WEATHER API
 
 function showTemp(response) {
+  celsiusTemperature = response.data.main.temp
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
   h1.innerHTML = cityName
   let temp = document.querySelector('h2')
-  temp.innerHTML = `${Math.round(response.data.main.temp)}°C`
+  temp.innerHTML = `${Math.round(response.data.main.temp)}`
   let weatherDesc = document.querySelector('h6')
   weatherDesc.innerHTML = `The weather today is...${response.data.weather[0].description}`
 }
@@ -99,3 +100,16 @@ let button = document.querySelector('#currentLoc')
 button.addEventListener('click', currentTemps)
 
 navigator.geolocation.getCurrentPosition(showPosition)
+
+function showFarenheitTemp(event) {
+  event.preventDefault
+  let farenheitTemp = (celsiusTemperature * 9) / 5 + 32
+  let temp = document.querySelector('h2')
+  temp.innerHTML = Math.round(farenheitTemp)
+}
+let celsiusTemperature = null
+
+let FarenheitLink = document.querySelector('#farenheit')
+FarenheitLink.addEventListener('click', showFarenheitTemp)
+
+citySearch('New York')
