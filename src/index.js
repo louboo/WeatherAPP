@@ -107,7 +107,7 @@ function showFarenheitTemp(event) {
   event.preventDefault
   let farenheitTemp = (celsiusTemp * 9) / 5 + 32
   let temp = document.querySelector('h2')
-  temp.innerHTML = Math.round(farenheitTemp)
+  temp.innerHTML = `${Math.round(farenheitTemp)}°F`
 }
 function showCelsiusTemp(event) {
   event.preventDefault
