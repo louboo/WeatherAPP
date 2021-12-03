@@ -1,6 +1,6 @@
 .container-fluid {
   border: 1px solid black;
-  height: 475px;
+  height: 470px;
   width: 850px;
   box-shadow: 5px 10px black;
   margin-top: 4%;
@@ -112,7 +112,17 @@ a {
   margin: 15px;
 }
 
-#cel {
+.b1 {
+  margin-left: 90%;
+  margin-top: -35%;
+}
+
+.b2 {
+  margin-left: 90%;
+  margin-top: 2%;
+}
+
+#celsius {
   font-family: 'Staatliches';
   width: 50px;
   height: 50px;
@@ -123,7 +133,7 @@ a {
   font-size: 30px;
 }
 
-#far {
+#farenheit {
   font-family: 'Staatliches';
   text-align: center;
   width: 50px;
@@ -165,20 +175,17 @@ a {
   margin-left: 25%;
 }
 
-#celButton {
-  padding-left: 25%;
-  padding-bottom: 5%;
-  padding-top: 0;
+#celsius {
+  width: 50px;
 }
-#celButton:hover {
+#celsius:hover {
   animation: myAnim 2s ease 0s infinite normal forwards;
 }
-#farButton {
-  width: 70px;
-  padding-left: 30%;
+#farenheit {
+  width: 50px;
 }
 
-#farButton:hover {
+#farenheit:hover {
   animation: myAnim 2s ease 0s infinite normal forwards;
 }
 
