@@ -121,4 +121,4 @@ FarenheitLink.addEventListener('click', showFarenheitTemp)
 let celsiusLink = document.querySelector('#celsius')
 celsiusLink.addEventListener('click', showCelsiusTemp)
 
-citySearch('New York')
+citySearch('Canterbury')
