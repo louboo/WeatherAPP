@@ -65,7 +65,7 @@ function showTemp(response) {
   let h1 = document.querySelector('h1')
   h1.innerHTML = cityName
   let temp = document.querySelector('h2')
-  temp.innerHTML = `${Math.round(response.data.main.temp)}`
+  temp.innerHTML = `${Math.round(response.data.main.temp)}°C`
   let weatherDesc = document.querySelector('h6')
   weatherDesc.innerHTML = `The weather today is...${response.data.weather[0].description}`
 }
