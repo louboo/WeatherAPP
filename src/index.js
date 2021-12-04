@@ -63,6 +63,7 @@ function showTemp(response) {
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
   h1.innerHTML = cityName
+  let iconElement = document.querySelector('#icon')
   let temp = document.querySelector('h2')
   temp.innerHTML = `${Math.round(response.data.main.temp)}°C`
   let weatherDesc = document.querySelector('h6')
@@ -74,6 +75,10 @@ function showTemp(response) {
   let windDisplay = document.querySelector('#windSpeed')
   windDisplay.innerHTML = `Wind speed: ${windSpeedData} km/h`
   celsiusTemp = response.data.main.temp
+  iconElement.setAttribute(
+    'src',
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+  )
 }
 
 function citySearch(city) {
