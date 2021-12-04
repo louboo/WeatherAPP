@@ -119,6 +119,8 @@ function showCelsiusTemp(event) {
   temp.innerHTML = `${Math.round(celsiusTemp)}°C`
 }
 
+let celsiusTemp = null
+
 let FarenheitLink = document.querySelector('#farenheit')
 FarenheitLink.addEventListener('click', showFarenheitTemp)
 
