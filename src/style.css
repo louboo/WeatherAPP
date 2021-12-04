@@ -185,6 +185,9 @@ a {
   height: 100px;
   width: 100px;
   text-align: center;
+  margin-left: 30%;
+  height: 200px;
+  width: 200px;
 }
 
 #celsius {
