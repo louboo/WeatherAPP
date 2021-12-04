@@ -55,12 +55,12 @@ a {
   font-family: 'Staatliches';
 }
 
-#humidity {
+.humid {
   color: hotpink;
   padding: 0;
 }
 
-#windSpeed {
+.wind {
   color: hotpink;
   padding: 0;
 }
