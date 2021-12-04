@@ -60,7 +60,6 @@ h4.innerHTML = `${hours}:${minutes}`
 // WEATHER API
 
 function showTemp(response) {
-  let celsiusTemp = null
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
   h1.innerHTML = cityName
