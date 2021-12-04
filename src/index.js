@@ -60,6 +60,7 @@ h4.innerHTML = `${hours}:${minutes}`
 // WEATHER API
 
 function showTemp(response) {
+  let celsiusTemp = null
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
   h1.innerHTML = cityName
@@ -69,13 +70,11 @@ function showTemp(response) {
   weatherDesc.innerHTML = `The weather today is...${response.data.weather[0].description}`
   let humidity = response.data.main.humidity
   let humidityDisplay = document.querySelector('#humidity')
-  humidityDisplay.innerHTML = `Humidity ${humidity}`
-
+  humidityDisplay.innerHTML = `Humidity:  ${humidity}%`
   let windSpeedData = response.data.wind.speed
   let windDisplay = document.querySelector('#windSpeed')
-  windDisplay.innerHTML = `Wind speed: ${windSpeedData}`
+  windDisplay.innerHTML = `Wind speed: ${windSpeedData} km/h`
   celsiusTemp = response.data.main.temp
-  let celsiusTemp = null
 }
 
 function citySearch(city) {
