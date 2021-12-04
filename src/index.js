@@ -68,7 +68,7 @@ function showTemp(response) {
   let weatherDesc = document.querySelector('h6')
   weatherDesc.innerHTML = `The weather today is...${response.data.weather[0].description}`
   let humidity = response.data.main.humidity
-  let humidityDisplay = document.querySelector('humidity')
+  let humidityDisplay = document.querySelector('#humidity')
   humidityDisplay.innerHTML = `Humidity ${humidity}`
   let celsiusTemp = null
   let windSpeedData = response.data.wind.wind.speed
