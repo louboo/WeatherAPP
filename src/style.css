@@ -1,10 +1,10 @@
 .container-fluid {
   border: 1px solid black;
-  height: 470px;
   width: 850px;
   box-shadow: 5px 10px black;
   margin-top: 4%;
   margin-bottom: 3%;
+  padding-bottom: 50%;
 }
 
 h1 {

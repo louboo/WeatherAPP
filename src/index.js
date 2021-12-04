@@ -92,6 +92,7 @@ function showPosition(response) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`
   axios.get(apiUrl).then(showTemp)
 }
+navigator.geolocation.getCurrentPosition(showPosition)
 
 function currentTemps(event) {
   event.preventDefault()
@@ -100,8 +101,6 @@ function currentTemps(event) {
 
 let button = document.querySelector('#currentLoc')
 button.addEventListener('click', currentTemps)
-
-navigator.geolocation.getCurrentPosition(showPosition)
 
 function showFarenheitTemp(event) {
   event.preventDefault
