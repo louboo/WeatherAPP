@@ -55,6 +55,14 @@ a {
   font-family: 'Staatliches';
 }
 
+#humid {
+  color: hotpink;
+}
+
+#wind {
+  color: hotpink;
+}
+
 #currentLoc {
   width: 150 px;
   background-color: #118a7e;
