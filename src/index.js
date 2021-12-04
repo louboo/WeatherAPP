@@ -87,7 +87,7 @@ function buttonSubmit(event) {
 let form = document.querySelector('#search-bar')
 form.addEventListener('submit', buttonSubmit)
 
-function showPosition(response) {
+function showPosition(position) {
   let apiKey = '270ea88a43eb3b55ea7828fd11903447'
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`
   axios.get(apiUrl).then(showTemp)
