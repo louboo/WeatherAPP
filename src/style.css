@@ -55,14 +55,16 @@ a {
   font-family: 'Staatliches';
 }
 
-.humid {
+#humidity {
   color: hotpink;
   padding: 0;
+  font-family: 'PT Sans';
 }
 
-.wind {
+#windSpeed {
   color: hotpink;
   padding: 0;
+  font-family: 'PT Sans';
 }
 
 #currentLoc {
