@@ -55,11 +55,11 @@ a {
   font-family: 'Staatliches';
 }
 
-#humid {
+.humid {
   color: hotpink;
 }
 
-#wind {
+.wind {
   color: hotpink;
 }
 
