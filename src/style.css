@@ -57,10 +57,12 @@ a {
 
 .humid {
   color: hotpink;
+  padding: 0;
 }
 
 .wind {
   color: hotpink;
+  padding: 0;
 }
 
 #currentLoc {
