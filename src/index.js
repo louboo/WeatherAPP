@@ -60,7 +60,6 @@ h4.innerHTML = `${hours}:${minutes}`
 // WEATHER API
 
 function showTemp(response) {
-  celsiusTemp = response.data.main.temp
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
   h1.innerHTML = cityName
@@ -75,6 +74,7 @@ function showTemp(response) {
   let windSpeedData = response.data.wind.wind.speed
   let windDisplay = document.querySelector('#windSpeed')
   windDisplay.innerHTML = `Wind speed: ${windSpeedData}`
+  celsiusTemp = response.data.main.temp
 }
 
 function citySearch(city) {
