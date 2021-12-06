@@ -94,6 +94,13 @@ function displayForescast(response) {
   forecastElement.innerHTML = forecastHTML
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates)
+  let apiKey = '270ea88a43eb3b55ea7828fd11903447'
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
+  axios.get(apiUrl).then(displayForecast)
+}
+
 function showTemp(response) {
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
