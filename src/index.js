@@ -61,7 +61,7 @@ h4.innerHTML = `${hours}:${minutes}`
 
 function displayForecast() {
   let forecastElement = document.querySelector('#forecast') // selecting element
-  let forecastHTML = `<div class="row">` // row
+  // row
   let days = [
     'Tuesday',
     'Wednesday',
@@ -70,6 +70,7 @@ function displayForecast() {
     'Saturday',
     'Sunday',
   ]
+  let forecastHTML = `<div class="row">`
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
