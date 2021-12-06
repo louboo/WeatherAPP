@@ -91,8 +91,8 @@ a {
 
 .weather-forecast-date {
   font-size: 16px;
-  color: hotpink
-  font-family: "Staatliches";
+  color: hotpink;
+  font-family: 'Staatliches';
 }
 
 .weather-forecast-temperature-min {
