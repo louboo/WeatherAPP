@@ -62,7 +62,7 @@ h4.innerHTML = `${hours}:${minutes}`
 function displayForecast() {
   let forecastElement = document.querySelector('#forecast')
 
-  forecastElement.html = 'Forecast'
+  forecastElement.innerHTML = 'Forecast'
 }
 
 function showTemp(response) {
