@@ -59,6 +59,12 @@ h4.innerHTML = `${hours}:${minutes}`
 
 // WEATHER API
 
+function displayForecast() {
+  let forecastElement = document.querySelector('#forecast')
+
+  forecastElement.html = 'Forecast'
+}
+
 function showTemp(response) {
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
@@ -132,3 +138,4 @@ let celsiusLink = document.querySelector('#celsius')
 celsiusLink.addEventListener('click', showCelsiusTemp)
 
 citySearch('Canterbury')
+displayForecast()
