@@ -98,6 +98,9 @@ function showTemp(response) {
   console.log(response)
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
+  let countryName = response.data.sys.countryName
+  let p = document.querySelector('p')
+  p.innerHTML = countryName
   h1.innerHTML = cityName
   let iconElement = document.querySelector('#icon')
   let temp = document.querySelector('h2')
