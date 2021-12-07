@@ -201,10 +201,12 @@ a {
 }
 
 .giphy-embed {
-  margin-left: 35%;
-  margin-top: 10%;
-  height: 120px;
-  width: 120px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -10%;
+  margin-left: 30%;
+  height: 200px;
+  width: 200px;
 }
 
 .weatherIcon {
