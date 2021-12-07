@@ -9,7 +9,7 @@
 
 h1 {
   font-family: 'Staatliches';
-  font-size: 70px;
+  font-size: 65px;
   margin-top: 8%;
   margin-left: 8%;
   text-align: center;
@@ -211,7 +211,7 @@ a {
   display: block;
   margin: 0 auto;
   margin-top: -5%;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 
 #celsius {
