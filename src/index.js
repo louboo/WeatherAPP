@@ -7,8 +7,6 @@ function displayCurrentTemp(response) {
   document.querySelection()
 }
 
-let weatherType = ['Sun', 'Rain', 'Cloud', 'Snow']
-
 new Date()
 let now = new Date()
 
@@ -50,14 +48,15 @@ h3.innerHTML = `${day}, ${date} ${month}, ${year}`
 let h4 = document.querySelector('h4')
 h4.innerHTML = `${hours}:${minutes}`
 
-// function convertToC() {
-// let fTemp = 68
-// let cTemp = Math.round(((fTemp - 32) * 5) / 9)
-// let h2 = document.querySelector('h2')
-// h2.innerHTML = `${cTemp}°C`
-// }
-
 // WEATHER API
+
+function formatWeekDay(timestamp) {
+  let date = new Date(timestamp * 1000)
+  letday = date.getDay()
+  let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+
+  return days[day]
+}
 
 function displayForecast(response) {
   let forecast = response.data.daily
@@ -71,7 +70,9 @@ function displayForecast(response) {
       forecastHTML +
       `
               <div class="col-2">
-                <div class="weather-forecast-date">${forecastDay.dt}</div>
+                <div class="weather-forecast-date">${formatWeekDay(
+                  forecastDay.dt,
+                )}</div>
                 <img
                   src="http://openweathermap.org/img/wn/${
                     forecastDay.weather[0].icon
