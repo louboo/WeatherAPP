@@ -99,9 +99,7 @@ function showTemp(response) {
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
   let countryName = response.data.sys.country
-  let p = document.querySelector('p')
-  p.innerHTML = countryName
-  h1.innerHTML = cityName
+  h1.innerHTML = `${cityName}, ${countryName}`
   let iconElement = document.querySelector('#icon')
   let temp = document.querySelector('h2')
   temp.innerHTML = `${Math.round(response.data.main.temp)}°C`
