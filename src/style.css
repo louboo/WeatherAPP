@@ -11,7 +11,7 @@ h1 {
   font-family: 'Staatliches';
   font-size: 80px;
   margin-top: 8%;
-  margin-left: 10%;
+  text-align: right;
   animation-name: fade;
   animation-duration: 5s;
   animation-iteration-count: infinite;
