@@ -86,6 +86,10 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates)
+}
+
 function showTemp(response) {
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
@@ -106,6 +110,8 @@ function showTemp(response) {
     'src',
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
   )
+
+  getForecast(response.data.coord)
 }
 
 function citySearch(city) {
