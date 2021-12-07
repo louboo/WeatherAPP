@@ -9,8 +9,9 @@
 
 h1 {
   font-family: 'Staatliches';
-  font-size: 50px;
+  font-size: 70px;
   margin-top: 8%;
+  margin-left: 8%;
   text-align: right;
   animation-name: fade;
   animation-duration: 5s;
@@ -208,8 +209,9 @@ a {
 
 .weatherIcon {
   display: block;
-  margin-left: 80%;
-  margin-top: 15%;
+  margin: 0 auto;
+  margin-top: -5%;
+  margin-bottom: 5%;
 }
 
 #celsius {
