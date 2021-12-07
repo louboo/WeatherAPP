@@ -95,6 +95,7 @@ function getForecast(coordinates) {
 }
 
 function showTemp(response) {
+  console.log(response)
   let cityName = response.data.name
   let h1 = document.querySelector('h1')
   h1.innerHTML = cityName
