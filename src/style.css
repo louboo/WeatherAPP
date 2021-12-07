@@ -164,6 +164,7 @@ a {
   cursor: pointer;
   outline: none;
   font-size: 30px;
+  color: #ec6e4c;
 }
 
 #farenheit {
@@ -177,6 +178,7 @@ a {
   cursor: pointer;
   outline: none;
   font-size: 30px;
+  color: #ec6e4c;
 }
 
 #buttonClick {
