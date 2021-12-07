@@ -52,7 +52,7 @@ h4.innerHTML = `${hours}:${minutes}`
 
 function formatWeekDay(timestamp) {
   let date = new Date(timestamp * 1000)
-  letday = date.getDay()
+  let day = date.getDay()
   let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
   return days[day]
