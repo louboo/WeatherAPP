@@ -26,6 +26,7 @@ h2 {
 h3 {
   font-family: 'Staatliches';
   text-align: center;
+  padding-top: 10%;
 }
 
 h4 {
@@ -36,8 +37,8 @@ h4 {
 h6 {
   font-family: 'Staatliches';
   display: block;
-  margin-left: 20%;
-  padding-top: 5%;
+  padding-top: 10%;
+  text-align: center;
 }
 
 footer {
@@ -198,12 +199,10 @@ a {
 }
 
 .hotChoc {
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  margin-left: 30%;
-  height: 200px;
-  width: 200px;
+  margin-left: 35%;
+  margin-top: 10%;
+  height: 120px;
+  width: 120px;
 }
 
 #celsius {
